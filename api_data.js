@@ -332,59 +332,31 @@ define({ "api": [
         "200": [
           {
             "group": "200",
+            "type": "int",
+            "optional": false,
+            "field": "current",
+            "description": "<p>当前页面</p>"
+          },
+          {
+            "group": "200",
+            "type": "int",
+            "optional": false,
+            "field": "size",
+            "description": "<p>每页数量</p>"
+          },
+          {
+            "group": "200",
             "type": "String",
             "optional": false,
-            "field": "mac",
-            "description": "<p>Mac地址</p>"
-          },
-          {
-            "group": "200",
-            "type": "String",
-            "optional": false,
-            "field": "registration_code",
-            "description": "<p>注册码</p>"
-          },
-          {
-            "group": "200",
-            "type": "String",
-            "optional": false,
-            "field": "school_code",
-            "description": "<p>学校编号</p>"
-          },
-          {
-            "group": "200",
-            "type": "String",
-            "optional": true,
-            "field": "grade",
-            "description": "<p>年级</p>"
-          },
-          {
-            "group": "200",
-            "type": "String",
-            "optional": true,
-            "field": "class",
-            "description": "<p>班级</p>"
-          },
-          {
-            "group": "200",
-            "type": "String",
-            "optional": true,
-            "field": "parent_phone1",
-            "description": "<p>家长电话1</p>"
-          },
-          {
-            "group": "200",
-            "type": "String",
-            "optional": true,
-            "field": "parent_phone2",
-            "description": "<p>家长电话2</p>"
+            "field": "mac_address",
+            "description": "<p>设备的mac地址</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "请求样例:",
-          "content": "?mac=8C:BE:BE:BD:EC:0E&registration_code=501112&school_code=47&grade=47&class=4711&parent_phone1=10086",
+          "content": "??current=1&size=4&mac_address=a2:02",
           "type": "json"
         }
       ]
@@ -432,7 +404,7 @@ define({ "api": [
             "type": "json",
             "optional": false,
             "field": "appwhitelist",
-            "description": "<p>返回班级</p>"
+            "description": "<p>白名单列表</p>"
           }
         ]
       },
