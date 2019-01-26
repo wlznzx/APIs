@@ -1,7 +1,7 @@
 [
   {
     "type": "GET",
-    "url": "/appstore/detail",
+    "url": "/appstore/appdetail",
     "title": "获取App信息",
     "group": "AppStore",
     "version": "0.0.1",
@@ -139,7 +139,7 @@
     },
     "filename": "myapp/appstore_v2.java",
     "groupTitle": "AppStore",
-    "name": "GetAppstoreDetail"
+    "name": "GetAppstoreAppdetail"
   },
   {
     "type": "GET",
@@ -169,7 +169,7 @@
             "group": "200",
             "type": "String",
             "optional": false,
-            "field": "mac_address",
+            "field": "mac",
             "description": "<p>设备的mac地址</p>"
           },
           {
@@ -184,7 +184,7 @@
       "examples": [
         {
           "title": "请求样例:",
-          "content": "?current=1&size=4&mac_address=a2:02&category=study",
+          "content": "?current=1&size=4&mac=a2:02&category=study",
           "type": "json"
         }
       ]
@@ -348,7 +348,7 @@
             "group": "200",
             "type": "String",
             "optional": false,
-            "field": "mac_address",
+            "field": "mac",
             "description": "<p>设备的mac地址</p>"
           }
         ]
@@ -356,7 +356,7 @@
       "examples": [
         {
           "title": "请求样例:",
-          "content": "??current=1&size=4&mac_address=a2:02",
+          "content": "??current=1&size=4&mac=a2:02",
           "type": "json"
         }
       ]
